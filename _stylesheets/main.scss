@@ -1,0 +1,241 @@
+// @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,900');
+
+// 1. Import the initial variables
+@import "sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+
+// Brand Palette
+
+$purple: #9678B5;
+$grey: #4C5466;
+$light-grey: #B1B5BC;
+$lighter-grey: #D9DBDF;
+$lightest-grey: #F4F4F6;
+
+$blue: #78D5E8;
+$blue-invert: #fff;
+$dark-blue: $blue;
+$beige: #FCF5E9;
+$orange: #F9A430;
+
+$red: #F03F59;
+$yellow: #FFDD58;
+$green: #5BE8B0;
+$pink: #F045A2;
+
+
+
+// Add a serif family
+// $font-family: "Roboto", Helvetica, Arial, sans-serif;
+$font-family: "freight-sans-pro", Calibri,"Helvetica Neue", Arial, sans-serif;
+$font-family-condensed: "freight-sans-pro" , Calibri, "Helvetica Neue" , Arial, sans-serif;
+
+
+// // 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $grey;
+$primary-invert: $blue-invert;
+$strong-color: inherit;
+
+$title-color: $grey;
+$subtitle-color: $grey;
+$text: $grey;
+$content-heading-color: $grey;
+
+
+// Typography
+$family-primary: $font-family;
+
+$title-weight: 800;
+$weight-bold: 800;
+
+$content-heading-weight: 800;
+
+/*
+type modular scale 1.25 (MAJOR THIRD)
+-------------------------------------
+5.96em
+4.768em
+3.815em
+3.052em
+2.441em
+1.953em
+1.563em
+1.25em
+1em
+0.8em
+0.64em
+*/
+
+$size-1: 3.052rem !default;
+$size-2: 2.441rem !default;
+$size-3: 1.953rem !default;
+$size-4: 1.563rem !default;
+$size-5: 1.25rem !default;
+$size-6: 1rem !default;
+$size-7: 0.8rem !default;
+
+
+
+// Dimensions
+$radius: .8rem;
+
+$vertical-rhythm-base: 1.5rem;
+$vertical-rhythm-small: $vertical-rhythm-base / 2;
+$vertical-rhythm-large: $vertical-rhythm-base * 2;
+
+
+
+// Navigation
+
+// $navbar-item-color: ;
+
+@import "sass/utilities/_all";
+@import "sass/base/_all";
+
+// Bulma’s Elements imported individually
+// For development we can import all --> @import "sass/elements/_all";
+
+@import "sass/elements/box.sass";
+@import "sass/elements/button.sass";
+@import "sass/elements/container.sass";
+@import "sass/elements/content.sass";
+// @import "sass/elements/form.sass";
+@import "sass/elements/icon.sass";
+@import "sass/elements/image.sass";
+@import "sass/elements/notification.sass";
+// @import "sass/elements/progress.sass";
+// @import "sass/elements/table.sass";
+// @import "sass/elements/tag.sass";
+@import "sass/elements/title.sass";
+@import "sass/elements/other.sass";
+
+// Bulma’s Components imported individually
+// For development we can import all --> @import "sass/components/_all";
+
+// @import "sass/components/breadcrumb.sass";
+@import "sass/components/card.sass";
+// @import "sass/components/dropdown.sass";
+@import "sass/components/level.sass";
+@import "sass/components/media.sass";
+@import "sass/components/menu.sass";
+// @import "sass/components/message.sass";
+// @import "sass/components/modal.sass";
+@import "sass/components/navbar.sass";
+// @import "sass/components/pagination.sass";
+// @import "sass/components/panel.sass";
+// @import "sass/components/tabs.sass";
+
+
+@import "sass/grid/_all";
+@import "sass/layout/_all";
+
+
+// 4. Import the rest of Bulma
+// @import "bulma";
+
+
+
+
+body {
+    background: #fff;
+
+    @include from($tablet) {
+      font-size: 20px;
+    }
+}
+
+// Bulma modifications
+.container {
+  max-width: 960px;
+}
+
+// Typography
+
+strong {
+  font-weight: $weight-bold !important;
+}
+
+.caption-title {
+  text-transform: uppercase;
+  font-family: $font-family-condensed;
+  margin-bottom: -.5em;
+  line-height: 1;
+  @include from($desktop) {
+    font-size: $size-6;
+  }
+
+}
+
+.thin-emphasis {
+  font-style: normal;
+  font-weight: normal !important;
+}
+
+.condensed-type {
+  font-family: $font-family-condensed;
+  text-transform: uppercase;
+}
+
+.highlight {
+  background-image: linear-gradient(-100deg,rgba(255,218,2,.2),rgba(255,218,2,.75) 95%,rgba(255,218,2,.1));
+  padding: 5px;
+  margin: -5px;
+  border-radius: 9px 4px 9px 4px;
+  display: inline;
+}
+
+
+// Buttons
+
+.button.is-dazzling {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
+  font-weight: $weight-bold;
+  border: none;
+  background: $blue;
+  background: linear-gradient(to right, $blue 16%,darken($blue, 15%) 96%);
+  box-shadow: 0 5px 12px 0 rgba(76,84,102,0.44);
+  transition: $speed ease-in all;
+
+  &:hover {
+    opacity: .8;
+    transform: translateY(-1px);
+  }
+}
+
+
+
+
+
+// Base
+@import "base/mixins";
+@import "base/vertical-rhythm";
+
+// Components
+@import "components/divider";
+@import "components/overlay-menu";
+// @import "components/logo-gallery";
+
+@import "sections/hero-canvas";
+
+
+// Bulma Extends
+// Modifying and extending bulma templates
+@import "bulma-extends/navbar";
+@import "bulma-extends/buttons";
+
+
+.content p a,
+.content li a {
+  border-bottom: 3px solid $blue;
+  box-shadow: inset 0 -5px 0 $blue;
+  transition: background .15s cubic-bezier(.33,.66,.66,1);
+  display: inline;
+  color: inherit;
+
+  &:hover {
+    background: $blue;
+  }
+}

@@ -1,0 +1,17 @@
+.divider {
+  margin: auto;
+  display: block;
+
+  fill: $lighter-grey;
+  width: 8rem;
+  height: 3rem;
+
+  @include from($tablet) {
+    width: 13rem;
+    height: 4rem;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+}

@@ -1,0 +1,4 @@
+name: Sea Level Research
+highlighter: pygments # or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+baseurl: /_site

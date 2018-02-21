@@ -1,0 +1,38 @@
+.number-reel {
+  text-align: center;
+  // background: red;
+}
+
+.number-reel__number {
+  font-style: normal;
+  font-weight: $weight-bold;
+  font-size: $size-4;
+  display: block;
+  padding: $vertical-rhythm-small 0;
+  margin-bottom: $vertical-rhythm-small;
+  border-top:  2px solid $lighter-grey;
+  border-bottom:  2px solid $lighter-grey;
+
+  @include from($tablet) {
+    font-size: $size-1;
+  }
+
+}
+
+.hero.is-dark .number-reel__number {
+  border-color: lighten($dark-blue, 10%);
+  border-color: rgba(255,255,255,.3);
+}
+
+
+.number-reel__explanation {
+  font-size: $size-7;
+  color: $light-grey;
+  text-transform: uppercase;
+  margin-top: $vertical-rhythm-small / 2;
+}
+
+.hero.is-dark .number-reel__explanation {
+  color: #fff;
+  // color: $dark-blue;
+}

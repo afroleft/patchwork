@@ -1,0 +1,28 @@
+.navbar-menu {
+  border-bottom: 2px solid $lighter-grey;
+  padding-bottom: $vertical-rhythm-base;
+}
+
+
+.hero .navbar-item {
+  display: block;
+  line-height: 1;
+  padding-top: 1.8rem;
+  transition: $speed $easing;
+}
+
+a.navbar-item.is-active {
+  background: transparent !important;
+}
+
+.navbar-item__title {
+  font-family: $font-family-condensed;
+  // text-transform: uppercase;
+  font-weight: 800;
+}
+
+.navbar-item__caption {
+  font-style: normal;
+  font-size: $size-6;
+  display: block;
+}

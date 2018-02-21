@@ -1,0 +1,192 @@
+$color-background: #F5F5F5;
+$color-main: #FF5252;
+$color-active: #FFF;
+$color-link: #FFF;
+
+
+
+.overlay-toggle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background: red;
+  cursor: pointer;
+  z-index: 100;
+  top: 1.6rem;
+  right: 1.4rem;
+  box-shadow: 0 1px 0 lighten($blue, 15%);
+
+  @include from($desktop) {
+    display: none;
+  }
+
+}
+
+.overlay-toggle__icon {
+  height: 1rem;
+  width: 1.2rem;
+  position: relative;
+
+  &.active {
+    .top {
+      transform: translateY(.35rem) translateX(0) rotate(45deg);
+    }
+    .middle {
+      opacity: 0;
+    }
+
+    .bottom {
+      transform: translateY(-.35rem) translateX(0) rotate(-45deg);
+    }
+  }
+
+  span {
+    // background: #fff;
+    background: $blue;
+    border: none;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:  all .35s ease;
+    cursor: pointer;
+
+    &:nth-of-type(2) {
+      top: .35rem;
+    }
+
+    &:nth-of-type(3) {
+      top: .7rem;
+    }
+  }
+}
+
+.overlay-toggle__label {
+  font-family: $font-family-condensed;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  font-size: $size-6;
+  margin-right: .3rem;
+}
+
+
+
+.overlay {
+  position: fixed;
+  background: $blue;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+
+  &.open {
+    opacity: .96;
+    visibility: visible;
+    height: 100%;
+
+    li {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .35s;
+
+      &:nth-of-type(2) {
+        animation-delay: .4s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: .45s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: .50s;
+      }
+    }
+  }
+}
+
+/* prevents scrolling on body when overlay open */
+.overlay-menu-open {
+  overflow: hidden;
+  position: relative;
+  height: 100%;  
+}
+
+
+.overlay-menu {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  padding: 0 1.6rem;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.overlay-menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  max-width: 28rem;
+  width: 100%;
+  text-align: left;
+}
+
+.overlay-menu__item {
+  display: block;
+  // height: 25%;
+  // height: calc(100% / 4);
+  // min-height: 50px;
+
+  position: relative;
+  opacity: 0;
+  line-height: 1;
+  // border-bottom: solid 3px rgba(0,0,0,.15);
+  border-bottom: solid 3px darken($blue, 8%);
+}
+
+.overlay-menu__link {
+  display: block;
+  position: relative;
+  padding: 1.2rem 0;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+  transition: $speed $easing;
+
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.overlay-menu__title {
+  font-family: $font-family-condensed;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: $size-4;
+  display: block;
+}
+
+.overlay-menu__caption {
+  font-style: normal;
+  font-size: $size-6;
+  display: block;
+  // opacity: .6;
+  color: $dark-blue;
+}
+
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
