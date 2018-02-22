@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
   $('#toggle-overlay-menu').click(function() {
+    $(this).toggleClass('active');
     $(this).children('.overlay-toggle__icon').toggleClass('active');
     $('#overlay-menu').toggleClass('open');
     $('html#totality').toggleClass('overlay-menu-open');

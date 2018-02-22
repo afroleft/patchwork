@@ -21,7 +21,8 @@ $overlay-toggle-color: $blue;
   padding: .4rem 1rem;
   box-shadow: 0 0 0;
 
-  &:hover {
+  &:hover,
+  &.active {
     background-color: $overlay-toggle-color;
     border-color: $overlay-toggle-color;
     color: #fff;
