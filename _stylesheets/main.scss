@@ -208,10 +208,19 @@ strong {
 // Logo
 
 .logo {
+  width: 7rem;
   padding: 1em 0;
+  margin-left: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+
+  @include from($tablet) {
+    width: 10rem;
+  }
+
+
 }
 
 // Base

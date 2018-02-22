@@ -2,7 +2,7 @@ $color-background: #F5F5F5;
 $color-main: #FF5252;
 $color-active: #FFF;
 $color-link: #FFF;
-$overlay-toggle-color: $grey;
+$overlay-toggle-color: $blue;
 
 
 .overlay-toggle {
@@ -11,7 +11,7 @@ $overlay-toggle-color: $grey;
   align-items: center;
   cursor: pointer;
   z-index: 100;
-  top: 1.6rem;
+  top: .9rem;
   right: 1.4rem;
   box-shadow: 0 1px 0 lighten($blue, 15%);
   border: 2px solid $overlay-toggle-color;
