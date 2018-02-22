@@ -31,6 +31,12 @@ $overlay-toggle-color: $blue;
     }
   }
 
+  @include from($tablet) {
+    top: 1.6rem;
+  }
+
+
+
   @include from($desktop) {
     display: none;
   }
@@ -90,7 +96,7 @@ $overlay-toggle-color: $blue;
 
 .overlay {
   position: fixed;
-  background: $blue;
+  background: $purple;
   top: 0;
   left: 0;
   width: 100%;
@@ -153,15 +159,10 @@ $overlay-toggle-color: $blue;
 
 .overlay-menu__item {
   display: block;
-  // height: 25%;
-  // height: calc(100% / 4);
-  // min-height: 50px;
-
   position: relative;
   opacity: 0;
   line-height: 1;
-  // border-bottom: solid 3px rgba(0,0,0,.15);
-  border-bottom: solid 3px darken($blue, 8%);
+  border-bottom: solid 3px darken($purple, 8%);
 }
 
 .overlay-menu__link {
@@ -191,7 +192,7 @@ $overlay-toggle-color: $blue;
   font-size: $size-6;
   display: block;
   // opacity: .6;
-  color: $dark-blue;
+  color: $lighter-grey;
 }
 
 

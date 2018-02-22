@@ -43,6 +43,7 @@ var sassOptions = {
  */
 var paths = {
   stylesheets: './_stylesheets/**/*.{sass,scss}',
+  javascripts: './_javascripts/**/*.{js}',
   svgIcons: './_icons/*',
   images: './_images/**/*.+(png|jpg|gif|svg)',
   includes: './_includes',
