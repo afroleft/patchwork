@@ -89,7 +89,7 @@ $vertical-rhythm-large: $vertical-rhythm-base * 2;
 
 // Navigation
 
-// $navbar-item-color: ;
+$navbar-item-hover-background-color: transparent;
 
 @import "sass/utilities/_all";
 @import "sass/base/_all";
@@ -205,9 +205,14 @@ strong {
   }
 }
 
+// Logo
 
 
-
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 // Base
 @import "base/mixins";

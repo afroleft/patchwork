@@ -1,13 +1,17 @@
-.navbar-menu {
-  border-bottom: 2px solid $lighter-grey;
-  padding-bottom: $vertical-rhythm-base;
+// .navbar-menu {
+//   // border-bottom: 2px solid $lighter-grey;
+//   // padding-bottom: $vertical-rhythm-base;
+// }
+
+.navbar > .container .navbar-brand {
+  margin-left: 0;
 }
 
 
 .hero .navbar-item {
   display: block;
   line-height: 1;
-  padding-top: 1.8rem;
+  padding: 2rem 0 2rem 1rem;
   transition: $speed $easing;
 }
 
