@@ -2,19 +2,34 @@ $color-background: #F5F5F5;
 $color-main: #FF5252;
 $color-active: #FFF;
 $color-link: #FFF;
-
+$overlay-toggle-color: $grey;
 
 
 .overlay-toggle {
   position: absolute;
   display: flex;
   align-items: center;
-  background: red;
   cursor: pointer;
   z-index: 100;
   top: 1.6rem;
   right: 1.4rem;
   box-shadow: 0 1px 0 lighten($blue, 15%);
+  border: 2px solid $overlay-toggle-color;
+  color: $overlay-toggle-color;
+  background: none;
+  border-radius: 10rem;
+  padding: .4rem 1rem;
+  box-shadow: 0 0 0;
+
+  &:hover {
+    background-color: $overlay-toggle-color;
+    border-color: $overlay-toggle-color;
+    color: #fff;
+
+    span {
+      background: #fff;
+    }
+  }
 
   @include from($desktop) {
     display: none;
@@ -42,14 +57,14 @@ $color-link: #FFF;
 
   span {
     // background: #fff;
-    background: $blue;
+    background: $overlay-toggle-color;
     border: none;
     height: 3px;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    transition:  all .35s ease;
+    transition:  all $speed ease;
     cursor: pointer;
 
     &:nth-of-type(2) {
@@ -63,12 +78,12 @@ $color-link: #FFF;
 }
 
 .overlay-toggle__label {
+  margin-right: .3rem;
+  margin-top: -.1rem;
   font-family: $font-family-condensed;
   text-transform: uppercase;
   font-weight: 800;
-  color: #fff;
-  font-size: $size-6;
-  margin-right: .3rem;
+  font-size: 1rem;
 }
 
 
@@ -111,7 +126,7 @@ $color-link: #FFF;
 .overlay-menu-open {
   overflow: hidden;
   position: relative;
-  height: 100%;  
+  height: 100%;
 }
 
 
