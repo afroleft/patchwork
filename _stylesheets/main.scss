@@ -77,6 +77,20 @@ $size-6: 1rem !default;
 $size-7: 0.8rem !default;
 
 
+// Responsiveness
+
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 32px !default;
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$smartphone: 350px !default;
+$tablet: 769px !default;
+// 960px container + 4rem
+$desktop: 960px + (2 * $gap) !default;
+// 1152px container + 4rem
+$widescreen: 1152px + (2 * $gap) !default;
+// 1344px container + 4rem
+$fullhd: 1344px + (2 * $gap) !default;
+
 
 // Dimensions
 $radius: .8rem;
@@ -219,10 +233,19 @@ strong {
   }
 }
 
+
+
+
+
 .hospital-banner,
 .locum-banner {
   h1 {
     margin-bottom: 0;
+  }
+  .content {
+    @include from($smartphone) {
+      width: 80%;
+    }
   }
 }
 
@@ -232,10 +255,11 @@ strong {
   background-repeat: no-repeat;
   background-size: contain;
   padding-bottom: 2rem;
-
   section.section {
     padding-top: 1.6rem;
   }
+
+
 }
 
 .locum-banner {
@@ -244,6 +268,11 @@ strong {
   background-repeat: no-repeat;
   background-size: 3.5em;
   margin-top: -2rem;
+
+  @include from($smartphone) {
+    background-size: 4.6em;
+  }
+
 }
 
 // Base
