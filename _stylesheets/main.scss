@@ -290,15 +290,14 @@ strong {
   }
 
   @include from($tablet) {
-    background-image: url(/assets/bank-fill-line-large.png);
+    background-image: url(/assets/bank-fill-line-fade-large.png);
     padding-bottom: 6rem;
     background-position: top right;
     margin-top: 2rem;
   }
 
-  @include from($desktop) {
-    background-image: url(/assets/bank-fill-line-fade-large.png);
-  }
+  // @include from($desktop) {
+  // }
 
 }
 
