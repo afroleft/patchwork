@@ -80,16 +80,17 @@ $size-7: 0.8rem !default;
 // Responsiveness
 
 // The container horizontal gap, which acts as the offset for breakpoints
-$gap: 32px !default;
+$gap: 32px;
 // 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
-$smartphone: 350px !default;
-$tablet: 769px !default;
+$smartphone: 350px;
+// $tablet: 769px !default;
+$tablet: 600px;
 // 960px container + 4rem
-$desktop: 960px + (2 * $gap) !default;
+$desktop: 960px + (2 * $gap);
 // 1152px container + 4rem
-$widescreen: 1152px + (2 * $gap) !default;
+$widescreen: 1152px + (2 * $gap);
 // 1344px container + 4rem
-$fullhd: 1344px + (2 * $gap) !default;
+$fullhd: 1344px + (2 * $gap);
 
 
 // Dimensions
@@ -236,42 +237,96 @@ strong {
 
 
 
+.home-hero {
+  @include from($tablet) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 
-.hospital-banner,
-.locum-banner {
+  @include from($desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+.home-hero__banner {
+  @include mobile {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  padding-top: $vertical-rhythm-base;
+  padding-bottom: $vertical-rhythm-base;
+
   h1 {
     margin-bottom: 0;
   }
   .content {
-    @include from($smartphone) {
-      width: 80%;
+    width: 80%;
+    max-width: 19rem;
+
+    @include from($tablet) {
+      max-width: none;
     }
+
   }
 }
 
-.hospital-banner {
+.home-hero__banner--hospital {
   background-image: url(/assets/bank-fill-line-small.png);
   background-position: -0.5rem bottom;
   background-repeat: no-repeat;
   background-size: contain;
   padding-bottom: 2rem;
-  section.section {
-    padding-top: 1.6rem;
+
+  @include from($smartphone) {
+    background-size: 90%;
   }
 
+  @include from(30rem) {
+    background-size: 28rem;
+    padding-bottom: 3.4rem;
+  }
+
+  @include from($tablet) {
+    background-image: url(/assets/bank-fill-line-large.png);
+    padding-bottom: 6rem;
+    background-position: top right;
+    margin-top: 2rem;
+  }
+
+  @include from($desktop) {
+    background-image: url(/assets/bank-fill-line-fade-large.png);
+  }
 
 }
 
-.locum-banner {
+.home-hero__banner--locum {
+  @include mobile {
+    margin-top: -1rem;
+  }
+
   background-image: url(/assets/helen.svg);
-  background-position: right 1rem bottom;
+  background-position: right 1rem bottom 1rem;
   background-repeat: no-repeat;
   background-size: 3.5em;
-  margin-top: -2rem;
 
   @include from($smartphone) {
     background-size: 4.6em;
   }
+
+  @include from($tablet) {
+    margin-top: 6rem;
+    background-size: 3.3em;
+    background-position: right 1rem bottom 0;
+  }
+
+  @include from($tablet) {
+    padding-top: 6rem;
+    background-size: 5.4em;
+  }
+
 
 }
 
@@ -306,4 +361,8 @@ strong {
     background: $blue;
     color: #fff;
   }
+}
+
+hr {
+  height: 2px;
 }
