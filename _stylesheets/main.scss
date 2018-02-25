@@ -47,6 +47,7 @@ $content-heading-color: $grey;
 // Typography
 $family-primary: $font-family;
 
+$title-size: $size-2;
 $title-weight: 800;
 $weight-bold: 800;
 
@@ -83,8 +84,8 @@ $size-7: 0.8rem !default;
 $gap: 32px;
 // 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
 $smartphone: 350px;
-// $tablet: 769px !default;
-$tablet: 600px;
+$tablet: 769px !default;
+// $tablet: 600px;
 // 960px container + 4rem
 $desktop: 960px + (2 * $gap);
 // 1152px container + 4rem
@@ -177,6 +178,7 @@ strong {
   font-family: $font-family-condensed;
   margin-bottom: -.5em;
   line-height: 1;
+  letter-spacing: 0.2rem;
   @include from($desktop) {
     font-size: $size-6;
   }
@@ -399,4 +401,31 @@ hr {
 }
 .content blockquote p {
   font-size: $size-4;
+}
+
+
+// job-feature pairs
+
+.job-feature {
+  max-width: 24rem;
+
+  @include from($tablet) {
+    padding: $vertical-rhythm-base 0;
+  }
+
+  @include from($desktop) {
+    width: 80%;
+  }
+
+}
+
+.job-feature__title {
+  font-size: $size-4 !important;
+  text-transform: uppercase;
+}
+
+.job-feature__icon {
+  color: $purple;
+  font-size: $size-3;
+  margin-left: -0.5rem;
 }
