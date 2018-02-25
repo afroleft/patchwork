@@ -278,7 +278,7 @@ strong {
   background-position: -0.5rem bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 
   @include from($smartphone) {
     background-size: 90%;
@@ -295,9 +295,6 @@ strong {
     background-position: top right;
     margin-top: 2rem;
   }
-
-  // @include from($desktop) {
-  // }
 
 }
 
@@ -328,6 +325,10 @@ strong {
 
 
 }
+
+
+
+
 
 // Base
 @import "base/mixins";
@@ -364,4 +365,38 @@ strong {
 
 hr {
   height: 2px;
+}
+
+
+
+// Horrible hacks, need to refactor using Bulma variables
+
+.hero.is-light .title,
+.hero.is-light {
+  color: $grey;
+}
+
+
+
+
+// blockquotes
+.content blockquote {
+  background: none;
+  border-left: 0;
+  margin: 0;
+  padding: 0;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+.content blockquote:before {
+  color: $light-grey;
+  content: open-quote;
+  font-size: 6rem;
+  line-height: 0.1em;
+  margin-left: -0.6em;
+  vertical-align: -0.4em;
+  float: left;
+  margin-top: 1rem;
+}
+.content blockquote p {
+  font-size: $size-4;
 }
