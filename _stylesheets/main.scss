@@ -117,7 +117,7 @@ $navbar-item-hover-background-color: transparent;
 @import "sass/elements/button.sass";
 @import "sass/elements/container.sass";
 @import "sass/elements/content.sass";
-// @import "sass/elements/form.sass";
+@import "sass/elements/form.sass";
 @import "sass/elements/icon.sass";
 @import "sass/elements/image.sass";
 @import "sass/elements/notification.sass";
@@ -408,6 +408,7 @@ hr {
 
 .job-feature {
   max-width: 24rem;
+  padding: $vertical-rhythm-base / 2 0;
 
   @include from($tablet) {
     padding: $vertical-rhythm-base 0;
@@ -428,4 +429,6 @@ hr {
   color: $purple;
   font-size: $size-3;
   margin-left: -0.5rem;
+  margin-bottom: $vertical-rhythm-base;
+  // display: block;
 }
