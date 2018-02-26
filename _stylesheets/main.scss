@@ -401,10 +401,13 @@ hr {
   content: open-quote;
   font-size: 6rem;
   line-height: 0.1em;
-  margin-left: -0.6em;
   vertical-align: -0.4em;
   float: left;
   margin-top: 1rem;
+
+  @include from($tablet) {
+    margin-left: -0.6em;
+  }
 }
 .content blockquote p {
   font-size: $size-4;
