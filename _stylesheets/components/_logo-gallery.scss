@@ -12,19 +12,18 @@ $logo-gallery-padding: 1.5rem;
 .logo-gallery__item {
   padding: ($vertical-rhythm-base / 2) $logo-gallery-padding;
   width: 50%;
+  max-width: 12rem;
 
   @include from($tablet) {
     width: 33%;
+    max-width: none;
     padding: $vertical-rhythm-base ($logo-gallery-padding * 2);
   }
 
 }
 
 .logo-gallery__image {
-  max-width: 12rem;
-
   @include from($tablet) {
     padding: 0 1.2rem;
-    max-width: 100%;
   }
 }

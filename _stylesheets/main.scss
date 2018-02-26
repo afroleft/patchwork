@@ -34,7 +34,7 @@ $font-family-condensed: "freight-sans-pro" , Calibri, "Helvetica Neue" , Arial, 
 
 // // 3. Set the derived variables
 // Use the new pink as the primary color
-$primary: $grey;
+$primary: $purple;
 $primary-invert: $blue-invert;
 $strong-color: inherit;
 
@@ -121,7 +121,7 @@ $navbar-item-hover-background-color: transparent;
 @import "sass/elements/icon.sass";
 @import "sass/elements/image.sass";
 @import "sass/elements/notification.sass";
-// @import "sass/elements/progress.sass";
+@import "sass/elements/progress.sass";
 // @import "sass/elements/table.sass";
 // @import "sass/elements/tag.sass";
 @import "sass/elements/title.sass";
@@ -343,7 +343,7 @@ strong {
 @import "components/overlay-menu";
 @import "components/logo-gallery";
 
-@import "sections/hero-canvas";
+@import "sections/home";
 
 
 // Bulma Extends
