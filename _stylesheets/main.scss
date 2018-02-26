@@ -176,7 +176,7 @@ strong {
 .caption-title {
   text-transform: uppercase;
   font-family: $font-family-condensed;
-  margin-bottom: -.5em;
+  // margin-bottom: -.5em;
   line-height: 1;
   letter-spacing: 0.2rem;
   @include from($desktop) {
@@ -240,6 +240,8 @@ strong {
 
 
 .home-hero {
+  margin-bottom: 3rem;
+
   @include from($tablet) {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -339,7 +341,7 @@ strong {
 // Components
 @import "components/divider";
 @import "components/overlay-menu";
-// @import "components/logo-gallery";
+@import "components/logo-gallery";
 
 @import "sections/hero-canvas";
 
@@ -371,7 +373,12 @@ hr {
 
 
 
-// Horrible hacks, need to refactor using Bulma variables
+// Horrible hacks,
+// need to refactor using Bulma variables
+
+.title {
+  line-height: 1;
+}
 
 .hero.is-light .title,
 .hero.is-light {
