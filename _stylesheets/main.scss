@@ -337,6 +337,24 @@ strong {
 }
 
 
+// locum hero
+
+.locum-hero__title {
+  position: relative; 
+}
+
+.locum-hero__icon {
+  color: $green;
+  font-size: 1.8rem;
+  position: absolute;
+  top: -.8rem;
+  right: 0;
+}
+
+.locum-hero__messaging {
+  display: flex;
+  align-items: center;
+}
 
 
 
@@ -382,8 +400,10 @@ hr {
 // Horrible hacks,
 // need to refactor using Bulma variables
 
-.title {
+.title,
+.content h1 {
   line-height: 1;
+  letter-spacing: -.1rem;
 }
 
 .hero.is-light .title,
