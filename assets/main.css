@@ -6017,7 +6017,7 @@ strong {
         max-width: none; } }
 
 .home-hero__banner--hospital {
-  background-image: url(/assets/bank-fill-line-small.png);
+  background-image: url(./bank-fill-line-small.png);
   background-position: -0.5rem bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -6031,13 +6031,13 @@ strong {
       padding-bottom: 3.4rem; } }
   @media screen and (min-width: 769px) {
     .home-hero__banner--hospital {
-      background-image: url(/assets/bank-fill-line-fade-large.png);
+      background-image: url(./bank-fill-line-fade-large.png);
       padding-bottom: 6rem;
       background-position: top right;
       margin-top: 2rem; } }
 
 .home-hero__banner--locum {
-  background-image: url(/assets/helen.svg);
+  background-image: url(./helen.svg);
   background-position: right 1rem bottom 1rem;
   background-repeat: no-repeat;
   background-size: 3.5em; }
