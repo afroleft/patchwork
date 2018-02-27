@@ -30,6 +30,7 @@ $pink: #F045A2;
 // $font-family: "Roboto", Helvetica, Arial, sans-serif;
 $font-family: "freight-sans-pro", Calibri,"Helvetica Neue", Arial, sans-serif;
 $font-family-condensed: "freight-sans-pro" , Calibri, "Helvetica Neue" , Arial, sans-serif;
+$font-family-hand: "verveine", Calibri,"Helvetica Neue", Arial, sans-serif;
 
 
 // // 3. Set the derived variables
@@ -193,6 +194,11 @@ strong {
 .condensed-type {
   font-family: $font-family-condensed;
   text-transform: uppercase;
+}
+
+.is-handwritten {
+  font-family: $font-family-hand;
+  font-weight: normal;
 }
 
 .highlight {
@@ -442,7 +448,9 @@ hr {
 
 
 .job-feature__icon {
-  color: darken($purple, 30%);
+  // color: darken($purple, 30%);
+  color: darken($green, 10%);
+  // color: $green;
   // color: $yellow;
   // color: lighten($purple, 15%);
   font-size: $size-3;
