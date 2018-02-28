@@ -9,4 +9,6 @@ $(document).ready(function(){
     $('.view-container').toggleClass('overlay-menu-open');
   });
 
+  var scroll = new SmoothScroll('a[href*="#"]');
+
 }); // end document ready
