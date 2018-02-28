@@ -340,15 +340,19 @@ strong {
 // locum hero
 
 .locum-hero__title {
-  position: relative; 
+  position: relative;
+}
+
+.locum-hero-title__caption {
+  display: block;
 }
 
 .locum-hero__icon {
   color: $green;
-  font-size: 1.8rem;
-  position: absolute;
-  top: -.8rem;
-  right: 0;
+  color: #5BE8B0;
+  font-size: 1.4rem;
+  vertical-align: super;
+  margin-left: -.5rem;
 }
 
 .locum-hero__messaging {
