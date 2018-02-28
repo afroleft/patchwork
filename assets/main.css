@@ -5960,6 +5960,8 @@ strong {
   margin: -5px;
   border-radius: 9px 4px 9px 4px;
   display: inline; }
+  .highlight.is-dark {
+    background-image: linear-gradient(-100deg, rgba(124, 89, 161, 0.2), rgba(124, 89, 161, 0.75) 95%, rgba(124, 89, 161, 0.1)); }
 
 .button.is-dazzling {
   color: #fff;
@@ -6056,6 +6058,25 @@ strong {
     .home-hero__banner--locum {
       padding-top: 6rem;
       background-size: 5.4em; } }
+
+.locum-hero__title {
+  position: relative; }
+
+.locum-hero-title__caption {
+  display: block; }
+
+.locum-hero__icon {
+  color: #5BE8B0;
+  color: #5BE8B0;
+  font-size: 1.4rem;
+  vertical-align: super;
+  margin-left: -.5rem; }
+
+.locum-hero__messaging {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .has-spacing-bottom {
   margin-bottom: 1.5rem; }
@@ -6328,8 +6349,10 @@ a.navbar-item.is-active {
 hr {
   height: 2px; }
 
-.title {
-  line-height: 1; }
+.title,
+.content h1 {
+  line-height: 1;
+  letter-spacing: -.1rem; }
 
 .hero.is-light .title,
 .hero.is-light {
