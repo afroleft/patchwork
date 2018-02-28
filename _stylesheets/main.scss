@@ -8,6 +8,7 @@
 // Brand Palette
 
 $purple: #9678B5;
+$dark-purple: darken($purple, 10%);
 $grey: #4C5466;
 $light-grey: #B1B5BC;
 $lighter-grey: #D9DBDF;
@@ -207,6 +208,10 @@ strong {
   margin: -5px;
   border-radius: 9px 4px 9px 4px;
   display: inline;
+
+  &.is-dark {
+    background-image: linear-gradient(-100deg,rgba($dark-purple, .2),rgba($dark-purple, .75) 95%,rgba($dark-purple, .1));
+  }
 }
 
 
