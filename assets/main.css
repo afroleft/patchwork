@@ -5980,7 +5980,7 @@ strong {
 .logo {
   width: 8rem;
   padding: 1em 0;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -6312,7 +6312,7 @@ strong {
 .hero .navbar-item {
   display: block;
   line-height: 1;
-  padding: 2rem 0 2rem 1rem;
+  padding: 2rem 1rem 2rem 1rem;
   transition: 86ms ease-out; }
 
 a.navbar-item.is-active {
