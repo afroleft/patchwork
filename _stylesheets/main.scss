@@ -109,6 +109,11 @@ $vertical-rhythm-large: $vertical-rhythm-base * 2;
 
 $navbar-item-hover-background-color: transparent;
 
+
+// Timeline
+
+$timeline-marker-background-color: red;
+
 @import "sass/utilities/_all";
 @import "sass/base/_all";
 
@@ -384,6 +389,11 @@ strong {
 // Modifying and extending bulma templates
 @import "bulma-extends/navbar";
 @import "bulma-extends/buttons";
+
+
+
+// Bulma Extensions
+@import "bulma-timeline";
 
 
 .content p a,

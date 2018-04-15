@@ -109,7 +109,8 @@ gulp.task('sass', function () {
         .pipe(sass({
             includePaths: [
               'scss',
-              'node_modules/bulma'
+              'node_modules/bulma',
+              'node_modules/bulma-timeline/dist'
             ],
             onError: browserSync.notify
         }))
@@ -126,7 +127,7 @@ gulp.task('sass', function () {
  */
 gulp.task('javascripts', function(){
     return gulp.src([
-    './node_modules/smooth-scroll/dist/js/smooth-scroll.js',  
+    './node_modules/smooth-scroll/dist/js/smooth-scroll.js',
     './_javascripts/application.js'])
     .pipe(concat('application.min.js'))
     .pipe(uglify())
