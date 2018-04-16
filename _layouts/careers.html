@@ -3,31 +3,16 @@ layout: default
 active: careers
 ---
 
-
-<!-- <section class="hero is-primary is-bold" style="margin-top: -2px; position: relative;z-index: 2;">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        LocumTap is Growing.
-      </h1>
-      <h2 class="subtitle">
-        Grow with us.
-      </h2>
-    </div>
-  </div>
-</section> -->
-
-
 <section class="section">
   <div class="container">
     <div class="columns">
 
       <div class="column is-8 is-offset-2">
-        <h1 class="title">LocumTap is Growing.</h1>
-        <h2 class="subtitle">Grow with us</h2>
+        <h4 class="caption-title">LocumTap is Growing</h4>
+        <h1 class="title is-size-1">Grow With Us</h1>
 
         <div class="content is-medium">
-          <p>LocumTap redefines <abbr title="human resources">HR</abbr> for healthcare in ways that:</p>
+          <p>LocumTap connects clinicians with shifts in ways that:</p>
 
           <p>💸 <strong>Saves the National Health Service millions</strong> </p>
 
@@ -37,11 +22,12 @@ active: careers
 
           <p>Backed by the Harvard Business Angels and founded by former NHS Doctors, the vision is being brought to life by a talented and diverse team.</p>
 
-          <div class="field is-grouped is-grouped-centered">
+          <div class="field is-grouped is-grouped-centered has-spacing-top--large">
             <p class="control">
-              <a href="#" class="button is-dazzling is-medium">See where you fit in</a>
+              <a href="#is-hiring" class="button is-dazzling is-medium">See where you fit in</a>
             </p>
           </div>
+
 
 
         </div>
@@ -91,31 +77,79 @@ active: careers
               <span class="tag is-medium"><strong>Today</strong></span>
             </header>
             <div class="timeline-item">
-              <div class="timeline-marker is-primary"></div>
+              <div class="timeline-marker is-danger is-icon">
+                <i class="fa fa-trophy has-text-white"></i>
+              </div>
+
               <div class="timeline-content">
                 <p class="heading is-size-6"><strong>April 2018</strong></p>
-                <p><strong>HSJ Shortlisted</strong> for Best Medical App in the World</p>
+                <p><strong><a href="https://awards.hsj.co.uk/">HSJ Award Finalist</a></strong></p>
               </div>
             </div>
             <div class="timeline-item">
-              <div class="timeline-marker is-warning is-image is-32x32">
-                <img src="http://bulma.io/images/placeholders/32x32.png">
+              <div class="timeline-marker is-warning is-icon">
+                <i class="fa fa-money-bill-alt has-text-white"></i>
               </div>
               <div class="timeline-content">
                 <p class="heading is-size-6"><strong>February 2017</strong></p>
                 <p><strong>£1.25million seed round raised</strong> led by <a href="http://www.hbsa.org.uk/s/1738/cc/index2.aspx?sid=1738&gid=6&pgid=3748" target="_blank"><strong>Harvard Business Angels</strong></a>.</p>
               </div>
             </div>
-            <header class="timeline-header">
-              <span class="tag is-medium"><strong>2017</strong></span>
-            </header>
+
+
+            <div class="timeline-item">
+              <div class="timeline-marker is-success is-icon">
+                <i class="fa fa-thumbs-up has-text-white"></i>
+              </div>
+              <div class="timeline-content">
+                <p class="heading is-size-6"><strong>January 2017</strong></p>
+                <p>LocumTap launched successfully in two (and counting) London Trusts</p>
+              </div>
+            </div>
+
             <div class="timeline-item">
               <div class="timeline-marker is-success is-icon">
                 <i class="fa fa-check has-text-white"></i>
               </div>
               <div class="timeline-content">
-                <p class="heading is-size-6"><strong>March 2016</strong></p>
-                <p><strong>Sex pesting Darlow</strong></p>
+                <p class="heading is-size-6"><strong>January 2017</strong></p>
+                <p>Successful Pilot <strong><a href="/#nhs-employers-findings">showing impressive results.</a></strong></p>
+              </div>
+            </div>
+
+
+            <div class="timeline-item">
+              <div class="timeline-marker is-success is-icon">
+                <i class="fa fa-pencil-alt has-text-white"></i>
+              </div>
+              <div class="timeline-content">
+                <p class="heading is-size-6"><strong>January 2017</strong></p>
+                <p>Start Developing Mininmum Marketable Product</p>
+              </div>
+            </div>
+
+
+            <header class="timeline-header">
+              <span class="tag is-medium"><strong>2017</strong></span>
+            </header>
+
+            <div class="timeline-item">
+              <div class="timeline-marker is-primary is-icon">
+                <i class="fas fa-handshake has-text-white"></i>
+              </div>
+              <div class="timeline-content">
+                <p class="heading is-size-6"><strong>December 2016</strong></p>
+                <p><strong>Chelsea &amp; Westminster Trust Partnership</strong></p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker is-success is-icon">
+                <i class="fa fa-check has-text-white"></i>
+              </div>
+              <div class="timeline-content">
+                <p class="heading is-size-6"><strong>September 2016</strong></p>
+                <p>Ideas &amp; the drawing board</p>
               </div>
             </div>
             <header class="timeline-header">
@@ -130,7 +164,7 @@ active: careers
 
 
 
-<section class="hero is-medium is-primary is-bold">
+<section class="hero is-medium is-primary is-bold" id="is-hiring">
   <div class="hero-body">
     <div class="container">
 
@@ -141,8 +175,11 @@ active: careers
             <h1 class="title">Vacancies</h1>
 
             <ul class="is-size-4">
-              <li><a href="#">Front End Engineer</a> — Product Team</li>
-              <li><a href="#">Marketing Executive</a> — Product Marketing</li>
+              <li><a href="/hiring/2018/01/01/we-are-hiring-a-frontend-engineer.html">Front End Engineer</a> — Product Team</li>
+              <!-- <li><a href="#">Marketing Executive</a> — Product Marketing</li> -->
+              {% for post in site.posts %}
+                  <!-- <li><a href="{{ post.url }}">{{ post.title }}</a></li> -->
+              {% endfor %}
 
             </ul>
 
