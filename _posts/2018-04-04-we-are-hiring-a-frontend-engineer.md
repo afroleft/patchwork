@@ -20,7 +20,9 @@ Backed by the Harvard Business Angels and founded by former NHS Doctors, LocumTa
 
 LocumTap connects clinicians with shifts—saving the NHS millions, keeping medics happy & making sure a doctor is there when you need one most.
 
-Do your best work. We are looking for a Front-end Engineer to join our growing product team where your work will be instrumental in contributing to LocumTap’s lofty mission.
+Do your best work.
+
+We are looking for a Front-end Engineer to join our growing product team where your work will be instrumental in moving LocumTap’s mission forward.
 
 
 ## About you:

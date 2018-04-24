@@ -1,0 +1,34 @@
+.profile-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-photos__item {
+  width: 6rem;
+  padding: .4rem;
+
+  @include from($tablet) {
+    width: 10rem;
+    padding: 1rem;
+
+  }
+
+  @include from($desktop) {
+    width: 12rem;
+    padding: 1rem;
+
+  }
+
+
+
+}
+
+.profile-photos__link {
+  display: block;
+}
+
+.profile-photos__image {
+  border-radius: 100%;
+
+}
