@@ -1,0 +1,36 @@
+
+.number-counter {
+  text-align: center;
+  font-weight: $weight-bold;
+}
+
+.number-counter__digit {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.36+0,0.11+100 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.36) 0%, rgba(0,0,0,0.11) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.36) 0%,rgba(0,0,0,0.11) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.36) 0%,rgba(0,0,0,0.11) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c000000', endColorstr='#1c000000',GradientType=0 ); /* IE6-9 */
+  box-shadow: 0 1px 0 0 rgba(255,255,255,0.29), inset 0 1px 8px 0 rgba(0,0,0,0.08);
+
+
+  border-radius: $radius;
+  margin: 0 .1rem;
+
+  padding: 0.6rem 0.8rem 1.1rem 0.8rem;
+  border-radius: 0.8rem;
+  display: inline-block;
+  line-height: 1;
+
+  font-size: $size-4;
+
+  @include from($tablet) {
+    font-size: $size-2;
+    padding: 0.6rem 1rem 1.1rem 1rem;
+  }
+}
+
+
+.number-counter__explanation {
+  text-align: center;
+  margin-top: .3rem;
+}

@@ -11,4 +11,16 @@ $(document).ready(function(){
 
   var scroll = new SmoothScroll('a[href*="#"]');
 
+
+  var options = {
+    stringsElement: '#typed-strings',
+    typeSpeed: 60,
+    backSpeed: 20,
+    startDelay: 2000,
+    loop: true,
+    smartBackspace: true
+  }
+
+  var typed = new Typed("#typed", options);
+
 }); // end document ready

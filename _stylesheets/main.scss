@@ -10,6 +10,7 @@
 $purple: #9678B5;
 $dark-purple: darken($purple, 10%);
 $grey: #4C5466;
+$dark-grey: darken($grey, 10%);
 $light-grey: #B1B5BC;
 $lighter-grey: #D9DBDF;
 $lightest-grey: #F4F4F6;
@@ -26,6 +27,7 @@ $green: #5BE8B0;
 $pink: #F045A2;
 
 
+$dark: $grey;
 
 // Add a serif family
 // $font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -151,6 +153,7 @@ $timeline-marker-background-color: red;
 // @import "sass/components/tabs.sass";
 
 
+
 @import "sass/grid/_all";
 @import "sass/layout/_all";
 
@@ -215,8 +218,9 @@ strong {
   display: inline;
 
   &.is-dark {
-    background-image: linear-gradient(-100deg,rgba($dark-purple, .2),rgba($dark-purple, .75) 95%,rgba($dark-purple, .1));
+    background-image: linear-gradient(-100deg,rgba($dark-grey, .2),rgba($dark-grey, .75) 95%,rgba($dark-grey, .1));
   }
+
 }
 
 
@@ -382,6 +386,8 @@ strong {
 @import "components/logo-gallery";
 // @import "components/split-windscreen";
 @import "components/profile-photos";
+@import "components/number-counter";
+
 
 @import "sections/home";
 
@@ -432,6 +438,8 @@ hr {
   color: $grey;
 }
 
+
+// hero is-grey
 
 
 
