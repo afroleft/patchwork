@@ -52,12 +52,20 @@
           'https://connect.facebook.net/en_US/fbevents.js');
           fbq('init', '2132576366783717');
           fbq('track', 'PageView');
+
+          function appDownloadEvent() {
+              // Grab those link clickers!!
+              window._fbq.push('track', 'AddToCart');
+          }
+
           </script>
           <noscript>
           <img height="1" width="1"
           src="https://www.facebook.com/tr?id=2132576366783717&ev=PageView
           &noscript=1"/>
         </noscript>
+
+
         <!-- End Facebook Pixel Code -->
 
 
@@ -145,9 +153,9 @@
 
             <p><a href="#is-fabulous">Learn more</a> or download:</p>
 
-            <a href="https://itunes.apple.com/gb/app/locumtap/id1274146437" class="button is-dazzling"><i class="fab fa-apple"></i> &nbsp; for iOS</a>
+            <a onclick="appDownloadEvent();" href="https://itunes.apple.com/gb/app/locumtap/id1274146437" class="button is-dazzling"><i class="fab fa-apple"></i> &nbsp; for iOS</a>
 
-            <a href="https://play.google.com/store/apps/details?id=com.locumtap.app" class="button is-dazzling"><i class="fab fa-android"></i> &nbsp; for Android</a>
+            <a onclick="appDownloadEvent();" href="https://play.google.com/store/apps/details?id=com.locumtap.app" class="button is-dazzling"><i class="fab fa-android"></i> &nbsp; for Android</a>
 
 
           </div>
