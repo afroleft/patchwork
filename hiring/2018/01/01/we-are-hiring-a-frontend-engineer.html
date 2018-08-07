@@ -52,13 +52,7 @@
           'https://connect.facebook.net/en_US/fbevents.js');
           fbq('init', '2132576366783717');
           fbq('track', 'PageView');
-
-          function appDownloadEvent() {
-              // Grab those link clickers!!
-              window._fbq.push('track', 'AddToCart');
-          }
-
-          </script>
+        </script>
           <noscript>
           <img height="1" width="1"
           src="https://www.facebook.com/tr?id=2132576366783717&ev=PageView
@@ -66,6 +60,13 @@
         </noscript>
 
 
+
+        <script>
+          function appDownloadEvent() {
+              // Grab those link clickers!!
+              window._fbq.push('track', 'AddToCart');
+          }
+        </script>
         <!-- End Facebook Pixel Code -->
 
 
