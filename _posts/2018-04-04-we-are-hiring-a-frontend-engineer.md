@@ -39,6 +39,6 @@ We are looking for a Front-end Engineer to join our growing product team where y
 
 <div class="field is-grouped is-grouped-centered has-spacing-top">
   <p class="control">
-    <a href="mailto:info@locumtap.com?subject=I want to join LocumTap&" class="button is-dazzling is-medium">Apply for this role</a>
+    <a href="mailto:hello@patchwork.health?subject=I want to join LocumTap&" class="button is-dazzling is-medium">Apply for this role</a>
   </p>
 </div>

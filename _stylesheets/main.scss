@@ -7,19 +7,34 @@
 
 // Brand Palette
 
+
+
+$charcoal:           #556C7C !default;
+$charcoal-light:     #778996 !default;
+$charcoal-lighter:   #99A7B0 !default;
+$charcoal-lightest:  #BBC4CB !default;
+$charcoal-faint:     #DDE2E5 !default;
+$charcoal-faintest:  #EDF0F1 !default;
+
+$beige: #FCF5E9;
+$orange: #F99662;
+$blue: lighten(#25C2D7, 8%);
+$blue-invert: #fff;
+$dark-blue: $blue;
+
+
+// LocumTap Days
 $purple: #9678B5;
 $dark-purple: darken($purple, 10%);
 $grey: #4C5466;
-$dark-grey: darken($grey, 10%);
+$dark-grey: darken($charcoal, 10%);
 $light-grey: #B1B5BC;
 $lighter-grey: #D9DBDF;
 $lightest-grey: #F4F4F6;
 
-$blue: #78D5E8;
-$blue-invert: #fff;
-$dark-blue: $blue;
-$beige: #FCF5E9;
-$orange: #F9A430;
+
+
+
 
 $red: #F03F59;
 $yellow: #FFDD58;
@@ -27,7 +42,7 @@ $green: #5BE8B0;
 $pink: #F045A2;
 
 
-$dark: $grey;
+$dark: $charcoal;
 
 // Add a serif family
 // $font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -38,14 +53,14 @@ $font-family-hand: "verveine", Calibri,"Helvetica Neue", Arial, sans-serif;
 
 // // 3. Set the derived variables
 // Use the new pink as the primary color
-$primary: $purple;
+$primary: $orange;
 $primary-invert: $blue-invert;
 $strong-color: inherit;
 
-$title-color: $grey;
-$subtitle-color: $grey;
-$text: $grey;
-$content-heading-color: $grey;
+$title-color: $charcoal;
+$subtitle-color: $charcoal;
+$text: $charcoal;
+$content-heading-color: $charcoal;
 
 
 // Typography
@@ -110,6 +125,7 @@ $vertical-rhythm-large: $vertical-rhythm-base * 2;
 // Navigation
 
 $navbar-item-hover-background-color: transparent;
+$navbar-item-color: $charcoal;
 
 
 // Timeline
@@ -252,7 +268,7 @@ strong {
   flex-direction: column;
   justify-content: center;
   @include from($tablet) {
-    width: 10rem;
+    width: 13.5rem;
   }
 }
 
@@ -435,7 +451,7 @@ hr {
 
 .hero.is-light .title,
 .hero.is-light {
-  color: $grey;
+  color: $charcoal;
 }
 
 
