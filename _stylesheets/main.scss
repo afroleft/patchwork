@@ -18,9 +18,14 @@ $charcoal-faintest:  #EDF0F1 !default;
 
 $beige: #FCF5E9;
 $orange: #F99662;
+$yellow: #F8C93E;
+
+
 $blue: lighten(#25C2D7, 8%);
 $blue-invert: #fff;
 $dark-blue: $blue;
+
+
 
 
 // LocumTap Days
@@ -37,7 +42,6 @@ $lightest-grey: #F4F4F6;
 
 
 $red: #F03F59;
-$yellow: #FFDD58;
 $green: #5BE8B0;
 $pink: #F045A2;
 
@@ -126,6 +130,7 @@ $vertical-rhythm-large: $vertical-rhythm-base * 2;
 
 $navbar-item-hover-background-color: transparent;
 $navbar-item-color: $charcoal;
+$navbar-item-hover-color: $orange;
 
 
 // Timeline
@@ -267,6 +272,17 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: .2s ease opacity;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+
   @include from($tablet) {
     width: 13.5rem;
   }
@@ -382,7 +398,7 @@ strong {
   color: #5BE8B0;
   font-size: 1.4rem;
   vertical-align: super;
-  margin-left: -.5rem;
+  margin-left: -.1rem;
 }
 
 .locum-hero__messaging {
@@ -514,7 +530,7 @@ hr {
 
 .job-feature__icon {
   // color: darken($purple, 30%);
-  color: darken($green, 10%);
+  color: darken($yellow, 10%);
   // color: $green;
   // color: $yellow;
   // color: lighten($purple, 15%);
