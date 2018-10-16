@@ -11,7 +11,7 @@ $overlay-toggle-color: $blue;
   align-items: center;
   cursor: pointer;
   z-index: 100;
-  top: .9rem;
+  top: .4rem;
   right: 1.2rem;
   box-shadow: 0 1px 0 lighten($blue, 15%);
   border: 2px solid $overlay-toggle-color;
@@ -30,6 +30,10 @@ $overlay-toggle-color: $blue;
     span {
       background: #fff;
     }
+  }
+
+  &:focus {
+    outline: none;
   }
 
   @include from($tablet) {
@@ -97,7 +101,7 @@ $overlay-toggle-color: $blue;
 
 .overlay {
   position: fixed;
-  background: $purple;
+  background: $charcoal;
   top: 0;
   left: 0;
   width: 100%;
@@ -163,7 +167,7 @@ $overlay-toggle-color: $blue;
   position: relative;
   opacity: 0;
   line-height: 1;
-  border-bottom: solid 3px darken($purple, 8%);
+  border-bottom: solid 3px darken($charcoal, 8%);
 }
 
 .overlay-menu__link {
@@ -184,7 +188,7 @@ $overlay-toggle-color: $blue;
   font-family: $font-family-condensed;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: $size-4;
+  font-size: $size-5;
   display: block;
 }
 
