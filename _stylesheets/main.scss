@@ -529,11 +529,7 @@ hr {
 
 
 .job-feature__icon {
-  // color: darken($purple, 30%);
   color: darken($yellow, 10%);
-  // color: $green;
-  // color: $yellow;
-  // color: lighten($purple, 15%);
   font-size: $size-3;
   margin-left: -0.5rem;
   margin-bottom: $vertical-rhythm-base;
@@ -541,4 +537,8 @@ hr {
   @include from($tablet) {
     margin-left: -1.2rem;
   }
+}
+
+.hero.is-primary .job-feature__icon {
+  color: darken($charcoal, 7%);
 }
