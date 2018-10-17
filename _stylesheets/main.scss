@@ -542,3 +542,17 @@ hr {
 .hero.is-primary .job-feature__icon {
   color: darken($charcoal, 7%);
 }
+
+
+.banner {
+  background: $purple;
+  color: #fff;
+  text-align: center;
+  font-size: $size-6;
+  padding: .6rem 0;
+}
+
+.banner a {
+  @include underline-links(lighten($yellow, 10%));
+  font-weight: bold;
+}
