@@ -47,11 +47,11 @@ As [Tom Darlow](https://twitter.com/afroleft) our Head of Product lays out:
 
 Patchwork affirms our mission to build a community of flexible healthcare workers who otherwise work from Hospital to Hospital and miss the social inclusion of being part of an established team. This can be (and often is!) a lonely place for a career locum.
 
-We see Patchwork as a welcoming place where they belong to a larger community of peers, and they have everything they need to do their best work as flexible worker.
+We see Patchwork as a welcoming place where they belong to a larger community of peers, and they have everything they need to do their best work as flexible workers.
 
 This is just the beginning of an exciting new chapter for us as we continue to serve our community of workers and employers the best way we can.
 
-We thank you all for your support as we continue on our journey.
+We thank you all for your support throughout our journey.
 
 Your best work starts here!
 
