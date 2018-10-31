@@ -127,7 +127,7 @@ gulp.task('sass', function () {
  */
 gulp.task('javascripts', function(){
     return gulp.src([
-      './node_modules/smooth-scroll/dist/js/smooth-scroll.js',
+      './node_modules/smooth-scroll/dist/smooth-scroll.js',
       './node_modules/typed.js/lib/typed.min.js',
       './_javascripts/application.js'])
     .pipe(concat('application.min.js'))
