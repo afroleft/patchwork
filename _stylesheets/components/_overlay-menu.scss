@@ -110,6 +110,7 @@ $overlay-toggle-color: $blue;
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
   overflow: hidden;
+  z-index: 10;
 
   &.open {
     opacity: .96;
