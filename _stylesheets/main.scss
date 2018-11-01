@@ -556,3 +556,32 @@ hr {
   @include underline-links(lighten($yellow, 10%));
   font-weight: bold;
 }
+
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+#announcement-bmj {
+  display: none;
+}
+
+#announcement-bmj.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  visibility: visible;
+  display: inline-block;
+}
