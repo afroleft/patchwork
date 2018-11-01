@@ -6625,7 +6625,8 @@ strong {
   opacity: 0;
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 10; }
   .overlay.open {
     opacity: .96;
     visibility: visible;
@@ -7369,3 +7370,32 @@ hr {
   font-weight: bold; }
   .banner a:hover, .banner a:active, .banner a:focus {
     background-image: none; }
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+#announcement-bmj {
+  display: none; }
+
+#announcement-bmj.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  visibility: visible;
+  display: inline-block; }
