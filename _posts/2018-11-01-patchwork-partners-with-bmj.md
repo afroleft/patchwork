@@ -47,13 +47,3 @@ NHS England- [https://www.england.nhs.uk/five-year-forward-view/next-steps-on-th
 [https://patchwork.health](https://patchwork.health/)
 
 **About BMJ**  BMJ is a global healthcare knowledge provider with a vision of helping to create a healthier world. We share knowledge and expertise to improve experiences and outcomes worldwide. Explore our full list of products and resources at [bmj.com/company](https://www.bmj.com/company/).
-
-
-
-<p class="has-text-centered has-text-grey-light condensed-type">Send your CV &amp; Covering Letter</p>
-
-<div class="field is-grouped is-grouped-centered has-spacing-top">
-  <p class="control">
-    <a href="mailto:hello@patchwork.health?subject=I want to join LocumTap&" class="button is-dazzling is-medium">Apply for this role</a>
-  </p>
-</div>
