@@ -11,8 +11,6 @@ $(document).ready(function(){
 
   var scroll = new SmoothScroll('a[href*="#"]');
 
-
-
   if(location.pathname == "/"){
 
     var options = {
@@ -28,9 +26,6 @@ $(document).ready(function(){
 
   }
 
-
-
-
   // BMJ announcement Board
   var current = new Date();
   var goLive  = new Date("November 1, 2018 17:19:00");
@@ -39,5 +34,14 @@ $(document).ready(function(){
      $('#announcement-bmj').addClass('fadeInUp');
   }
 
+  // Homepage Video
+
+  if ($('.embeded-video-section').length > 0) {
+    $('.embed-container-play').on('click', function(){
+        $(this).fadeOut();
+        $('.embed-container-poster').fadeOut();
+        $(this).parent().append('<iframe src="https://www.youtube.com/embed/' + $(this).attr('data-youtube-id') + '?rel=0&amp;modestbranding=1&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>');
+    });
+  }
 
 }); // end document ready
