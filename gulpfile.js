@@ -18,7 +18,7 @@ var ghPages       = require('gulp-gh-pages');
 var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
-var eyeglass    = require("eyeglass");
+var eyeglass    = require('eyeglass');
 var concat      = require('gulp-concat');
 var uglify      = require('gulp-uglify');
 
