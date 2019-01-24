@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.5'
+ruby '2.6.0'
 
 gem 'jekyll', '~> 3.6'
 

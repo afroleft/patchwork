@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "We’re hiring: A Product Owner"
-date:   2018-11-08 00:00:00
+title:  "We’re hiring: A Product Designer"
+date:   2019-01-24 00:00:00
 categories: hiring
 ---
 
@@ -12,16 +12,18 @@ categories: hiring
 
 ### Patchwork is Growing. Grow with us!
 
-Backed by the Harvard Business Angels, partnered with the BMJ and founded by former NHS Doctors, Patchwork is being brought to life by a talented and diverse team of designers, engineers, and implementers.
+Backed by the Harvard Business Angels, partnered with the British Medical Journal and founded by former NHS Doctors, Patchwork is being brought to life by a talented and diverse team of designers, engineers, and implementers.
+
 
 ### Here’s what we’re working on...
 
-Patchwork connects clinicians (think Doctors, Nurses) directly with vacant shifts. This is saving the NHS millions (and counting), keeps clinicians happy and makes sure a doctor is there when you need one most.
+Patchwork connects Doctors directly with shifts in Hospitals. This is saving the NHS millions (and counting), keeps clinicians happy and makes sure a doctor is there when you need one most.
 
-You can think of Patchwork as a marketplace product, one side Employers, another side Clinicians.
+You can think of Patchwork as a marketplace, one side Hospitals, another side Doctors.
 
-- For Employers: Patchwork ramps up the recruitment of clinicians, meaning more people are ready to book your vacant shifts. It automates repetitive tasks—enabling shifts to be requested, filled and paid faster than yesterday.
-- For Clinicians: Patchwork enables you to join healthcare organisations that are local to you. You can browse available shifts in realtime, have relevant shifts recommended to you, book instantly and get paid on time.
+* For Hospitals: Patchwork ramps up the recruitment of doctors, meaning more people are ready to book your vacant shifts. It automates repetitive tasks—enabling shifts to be requested, filled and paid faster than yesterday.
+* For Doctors: Patchwork enables you to join healthcare organisations that are local to you. You can browse available shifts, see relevant shifts recommended to you, book instantly and get paid on time.
+
 
 ---
 
@@ -31,33 +33,28 @@ You can think of Patchwork as a marketplace product, one side Employers, another
 
 ---
 
-### Do your best work.
+### Do your best work
 
-We are looking for a Product Owner to join our growing product team where your work will be instrumental in moving Patchwork's mission forward. This will be our first Product hire—a huge opportunity.
+
+We are looking for a Product Designer to join our growing product team where your work will be instrumental in moving Patchwork’s mission forward. This will be our first Product Design hire—a huge opportunity.
 
 
 ### Key Responsibilities. You’ll be:
 
-- Implementing, tracking, and reporting back on progress
-- Collaborating with teams across Patchwork to align plans, unblock development, and communicate changes with customers
-- Speccing work with [job stories](https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27) alongside designers to prepare for development
-- Contributing to QA testing ensuring common user journeys are problem-free, smooth and clear
-- Making sure that features get delivered quickly and efficiently, following lean MVP experimental work
-- Tracking and monitoring your features’ performance and functionality after launch to iterate and improve on them
+One day you'll be designing new iterations for the iPhone and Android apps or helping to redesign the Patchwork Hub which is responsible for more than 1million of hours worked by doctors who are delivering babies, mending hips, giving advice and making peoples’ lives a little bit better. Another day you might be embedded in marketing team to lead the design direction of our website. 
 
-### **Be an essential part of the Patchwork team**
-
-- Work closely with the Head of Product and Implementation Team to help define and deliver our product roadmap
-- Communicate with your team to continuously improve how you work together, making sure everyone is productive, happy and efficient
-- Communicate with co-located and off-site stakeholders
-- Spread your knowledge and mentor other people within the team
 
 ### **You should apply if:**
 
-- You’ve shipped excellent products in a fast-growing company before
-- You’re passionate about building the best possible user experience, and you monitor your metrics to see whether you’re delivering
-- You’re comfortable working in a technical team that deals with ambiguity every day
-- You’re passionate about sharing your knowledge
+- You have excellent written skills that help you write succinct and punchy interface copy.
+- You have a good knowledge of Sketch App.
+- You understand that good design is not about trends but is built on top of principles and tradeoffs. You make well-reasoned design decisions. 
+- You can show us a portfolio with detailed examples of beautiful interaction design.
+- You have empathy for customer needs, but can also consider technical constraints and business goals.
+- You can distill complicated problems into simple and elegant solutions.
+- You can demonstrate a good understanding of what makes an experience good or bad is critical. You can think through user problems, find reasonable solutions, mock them up in detail, and work with engineers to build them.
+- You have a highly refined aesthetic sense and can both work within and expand the Patchwork style.
+- You are flexible; we’re a young startup and you’ll be working on lots of different fun things.
 - What we’re doing here at Patchwork excites you!
 
 ---
